@@ -17,8 +17,8 @@ import com.vehicalBackend.vehicalMovement.model.Coordinate;
 @RequestMapping("/api/coordinates")
 public class CoordinateController {
 	
-	@Value("${web-production-4a3c4.up.railway.app}")
-	private String publicDomain;
+//	@Value("${web-production-4a3c4.up.railway.app}")
+//	private String publicDomain;
 
  @GetMapping
  public List<Coordinate> getCoordinates() {

@@ -1,1 +1,2 @@
-web: java -jar target/your-jar-file-name.jar 
+web: java -jar target/vehicalMovement-0.0.1-SNAPSHOT.jar
+
