@@ -4,6 +4,7 @@ package com.vehicalBackend.vehicalMovement.controller;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +16,9 @@ import com.vehicalBackend.vehicalMovement.model.Coordinate;
 @RestController
 @RequestMapping("/api/coordinates")
 public class CoordinateController {
+	
+	@Value("${web-production-4a3c4.up.railway.app}")
+	private String publicDomain;
 
  @GetMapping
  public List<Coordinate> getCoordinates() {
